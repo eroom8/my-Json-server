@@ -1,14 +1,1 @@
-[
-  {
-    "name": "John",
-    "age": 25
-  },
-  {
-    "name": "John",
-    "age": 25
-  },
-  {
-    "name": "John",
-    "age": 25
-  }
-]
+[{"name":"eric","email":"eric@gmail.com","phone":"01234555","age":"20","socialStatus":"","gender":"m","contactMethods":["email"]},{"name":"ken","email":"ken@gmail.com","phone":"12345","age":"20","socialStatus":"","gender":"m","contactMethods":["email"]}]
