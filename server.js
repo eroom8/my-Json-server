@@ -9,15 +9,17 @@ const port = 3000;
 app.use(bodyParser.json());
 
 // GET endpoint to retrieve data from data.json
-app.get('/api/data', (req, res) => {
+// Async/Await with fs.promises
+app.get('/api/data', async (req, res) => {
   try {
-    const data = fs.readFileSync('data.json', 'utf8');
+    const data = await fs.promises.readFile('data.json', 'utf8');
     res.json(JSON.parse(data));
   } catch (err) {
     console.error(err);
     res.status(500).send('Internal Server Error');
   }
 });
+
 
 // POST endpoint to store form data in data.json
 app.post('/api/data', (req, res) => {
